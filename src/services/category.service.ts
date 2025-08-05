@@ -75,7 +75,7 @@ export const generateUniqueId = async (): Promise<string> => {
     return uniqueId; // Return the unique ID
 };
 
-export const deleteCategoryById = async (): Promise<void> => {
+export const deleteAllCategories = async (): Promise<void> => {
     try {
         const result = await Category.deleteOne({});
         console.log("Deleted ${result.deletedCount} categories from the database.");

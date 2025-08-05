@@ -1,9 +1,9 @@
 export interface ProductDto {
-    id: number;
+    id: string;
     name: string;
     price: number;
     currency: string;
     image: string;
-    description?: string | null;
-    category?: string;
+    description: string | null | undefined;
+    category: string;
 }

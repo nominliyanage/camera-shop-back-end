@@ -3,7 +3,7 @@ import mongoose, {Schema} from "mongoose";
 const ProductModel = new mongoose.Schema({
     "id": {
         required: true, // like not null
-        type: Number,
+        type: String,
         unique: true, // Unique key constraint
         index: true // For better performance
     },
