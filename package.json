@@ -6,7 +6,9 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.18.0",
-    "mongoose": "^8.16.5"
+    "mongoose": "^8.16.5",
+    "nodemailer": "^7.0.5",
+    "uuid": "^11.1.0"
   },
   "name": "camera-shop-back-end",
   "version": "1.0.0",
@@ -27,6 +29,8 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^24.1.0",
+    "@types/nodemailer": "^6.4.17",
+    "@types/uuid": "^10.0.0",
     "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"

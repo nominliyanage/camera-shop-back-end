@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, {Schema} from "mongoose";
 
 const ProductModel = new mongoose.Schema({
     "id": {
@@ -22,5 +22,16 @@ const ProductModel = new mongoose.Schema({
     "image": {
         required: true,
         type: String
+    },
+    "description": {
+        type: String
+    },
+    "category": {
+        type: Schema.Types.ObjectId, // Reference to the Category model
+        ref: "Category", // Name of the Category model
+        required: true
     }
 });
+
+const Product = mongoose.model('Product', ProductModel);
+export default Product;
