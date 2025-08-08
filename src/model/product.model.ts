@@ -29,7 +29,7 @@ const ProductModel = new mongoose.Schema({
     "category": {
         type: Schema.Types.ObjectId, // Reference to the Category model
         ref: "Category", // Name of the Category model
-        required: true
+        required: true,
     }
 });
 
