@@ -9,8 +9,8 @@ export const getAllProducts = async (req: Request, res: Response) => {
         console.log("Retrieved products:", products);
         res.status(200).json(products);
     } catch (error) {
-        console.error(error);
-        res.status(500).json({error: 'Something went wrong!'});
+        console.error("Error retrieving products:", error);
+        res.status(500).json({message: 'Something went wrong!', error});
     }
 }
 

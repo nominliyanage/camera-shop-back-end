@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import { v4 as uuidv4 } from 'uuid';
 import { sendEmail } from "../utils/email.util";
 
-const stripe = new Stripe("sk_test_51R6ZgFKiBxldEfFSDQhuZZlyZufTUH4ua3pqx4P8XTx746kQN4ufxX4GWZZ8YSehmDhVV6ULYuS9apUtmcdJHhwR00LMZq0lIJ", { apiVersion: "2025-06-30.basil" });
+const stripe = new Stripe("sk_test_51R6ZgFKiBxldEfFSDQhuZZlyZufTUH4ua3pqx4P8XTx746kQN4ufxX4GWZZ8YSehmDhVV6ULYuS9apUtmcdJHhwR00LMZq0lIJ", );
 
 export const createPaymentIntent = async (req: Request, res: Response) => {
     try {
